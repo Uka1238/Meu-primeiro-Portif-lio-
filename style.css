@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-Mobile\ .png);
   --border: rgba(255, 255, 255, 0.5);
   --background: rgba(255, 255, 255, 0.1);
   --social-links: rgba(255, 255, 255, 0.1);
@@ -14,9 +14,9 @@
 }
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-light-mobile.png);
   --border: rgba(0, 0, 0, 0.4);
-  --background: rgba(0, 0, 0, 0.05);
+  --background: rgba(255, 255, 255, 0.03);
   --surface-color: rgba(0, 0, 0, 0.05);
   --social-links: rgba(0, 0, 0, 0.05);
   --switch-bg-url: url(./assets/Sun.svg);
@@ -24,6 +24,7 @@
 
 body {
   background: var(--bg-url) no-repeat top/cover;
+  height: 100vh;
 }
 
 body * {
@@ -33,9 +34,10 @@ body * {
 
 .container {
   width: 100%;
-  max-width: 588;
+  max-width: 588px;
   height: 712px;
-  margin: 56px auto;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
 .profile {
   text-align: center;
@@ -139,4 +141,14 @@ ul li a:hover {
 .rodape {
   text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-Desktop.png);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-Desktop-light.png);
+  }
 }
