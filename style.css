@@ -69,6 +69,13 @@ body * {
   left: initial;
 }
 
+.light .switch button {
+  animation: slide-in 0.4s;
+}
+
+.switch button:hover {
+  outline: 8px solid var(--border);
+}
 .switch span {
   display: block;
   width: 100%;
@@ -143,6 +150,7 @@ ul li a:hover {
   font-weight: 300;
 }
 
+/* MEDIA QUERIES */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-Desktop.png);
@@ -150,5 +158,24 @@ ul li a:hover {
 
   .light {
     --bg-url: url(./assets/bg-Desktop-light.png);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
