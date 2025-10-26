@@ -1,4 +1,4 @@
-> > > > > > > main
+
 <h1>Projeto Final Discover | Rocketseat</h1>
 <img width="1920" height="1080" alt="Discover  Rocketseat" src="./assets/readme.png" />
 
@@ -28,4 +28,3 @@ Trata-se de um site de agrupamento de multiplos links para compartilhar portifó
 - HTML
 - CSS
 - JavaScript
-  > > > > > > > 6af8cc9cbea365ced7856e43e1b6966e84c1a0b8
